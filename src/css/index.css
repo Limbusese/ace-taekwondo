@@ -93,8 +93,8 @@ header.active {
 
 .hero_section_background {
     background: 
-               linear-gradient(to bottom , transparent, rgb(254,242,227, 30)), 
-               linear-gradient(to left,  rgb(254,242,227, 30%), transparent), 
+               linear-gradient(to bottom , transparent, rgb(254,231,201)), 
+               linear-gradient(to left,  rgb(254,231,201, 30%), transparent), 
                url("../assests/images/background1_img.png");
     background-repeat: no-repeat;
     background-size: cover;
