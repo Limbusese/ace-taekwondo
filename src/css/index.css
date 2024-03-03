@@ -29,6 +29,26 @@ main {
 }
 
 /* Header Scroll */
+.header_section {
+   
+    position: relative;
+    overflow: hidden;
+    height: 60vh;
+    /* background: rgba(1, 1, 1, 0.3); */
+    background-image: linear-gradient(to top, rgb(254,231,201, 0.9), transparent), 
+                      linear-gradient(to left,  rgb(254,231,201, .3), transparent);
+}
+
+.hero_section_video {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+}
+
+
 header {
     position: fixed;
     width: 100%;
@@ -82,33 +102,10 @@ header.active {
 }
 
 /* Hero section */
-
-/* .hero_section_information{
+/* 
+.hero_section_information{
     padding: 8rem 0 2vh 0;
 } */
-
-.hero_section {
-    margin-top: 30vw;
-}
-
-.hero_section_background {
-    background: 
-               linear-gradient(to bottom , transparent, rgb(254,231,201)), 
-               linear-gradient(to left,  rgb(254,231,201, 30%), transparent), 
-               url("../assests/images/background1_img.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-    transform: scaleX(-1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vw;
-    z-index: -1;
-    overflow: hidden;
-}
 
 
 
@@ -163,6 +160,7 @@ header.active {
     text-decoration: none;
     color: black;
     position: relative;
+    border: 3px solid blue;
     transition: 0.3s ease;
     width: fit-content;
 }
@@ -183,9 +181,6 @@ header.active {
     width: 100%;
     transition: 0.8s  ease-in-out;
 }
-
-
-
 
 
 .navigation_menu {
@@ -210,6 +205,38 @@ header.active {
     transition: .3s ease; 
 }
 
+/* .main_section{
+    border: 3px solid rgb(99, 156, 99);
+    position: relative;
+    background-image: 
+    linear-gradient(to bottom , transparent, rgb(254,231,201)), 
+    linear-gradient(to left,  rgb(254,231,201, 30%), transparent);
+} */
+
+/* .hero_section {
+    border: 3px solid red;
+    position: relative;
+    min-width: 100vw;
+    min-height: 30vh;
+    background: rgba(1, 1, 1, 0.3);background-image: 
+    linear-gradient(to bottom , transparent, rgb(254,231,201)), 
+    linear-gradient(to left,  rgb(254,231,201, 30%), transparent);
+    
+}
+
+.hero_section_background {
+    position: absolute;
+  
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.hero_section_video {
+    width: 100vw;
+} */
+
+
 
 /* main Section */
 
@@ -220,7 +247,9 @@ header.active {
 }
 
 .hero_section_information {
-    margin-top: 7vh;
+    border: 3px solid;
+    margin-top: 17vh;
+    z-index: 1000;
 }
 
 .head_content p {
